@@ -13,13 +13,11 @@ main {
       padding-top: 0;
 }
 header {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      text-align: center;
+      font-size: 1.5em;
       background-color: #b1781e; 
       font-family: Georgia, sans-serif;
       padding: 1em;
-      height: 6em;
 }
 header a { text-decoration: none; }
 header a:link { color: #fff1d2; }
@@ -39,6 +37,12 @@ header a:hover { color: #f3e5c6; }
 }
 h1 {
       font-size: 2.5em;
+}
+h2 {
+      display: inline;
+}
+h3 {
+      display: inline;
 }
 nav {
       align-items: center;
@@ -77,3 +81,44 @@ nav li {
       border: 1px solid black;
       border-bottom: solid;
 }
+footer {
+      text-align: center;
+      font-size: .70em;
+      font-style: italic;
+      padding: 1em;
+      color: #474747;
+      font-weight: 600;
+}
+/* Medium Display */
+@media (min-width: 600px) {
+      h1 {
+            font-size: 2em;
+            letter-spacing: .25em;
+      }
+      nav li {
+            width: 12em;
+	      border-bottom: none; 
+         }
+      nav ul {
+            display: flex;
+            flex-flow: row nowrap;
+		justify-content: space-around;
+            padding-right: 2em;
+      }
+      section {
+            padding-left: 2em;
+            padding-right: 2em;
+      }
+}
+ 
+/* Large Display */
+@media (min-width: 1024px) {
+      nav ul {
+            padding-right: 10%;
+            padding-left: 10%;
+      }
+      #wrapper {
+            margin: auto;
+            width: 80%;
+      }
+} 

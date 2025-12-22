@@ -1,0 +1,213 @@
+* { box-sizing: border-box; }
+body {
+      background-color: #f2bd66; 
+      color: #272a00;
+      font-family: Arial, Verdana, sans-serif;
+      margin: 0;
+}
+main {
+      padding: 0 1em;
+}
+header {
+      text-align: center;
+      background-color: #b1781e; 
+      font-family: Georgia, sans-serif;
+      padding: 1.5em 0;
+}
+header a { text-decoration: none; }
+header a:link, header a:visited { color: #fff1d2; }
+header a:hover { color: #f3e5c6; }
+
+#header1 { color: #c60000; }
+#header2 { color: #7b5006; }
+#header3 { color: #fffb17; }
+#header4 { color: #fff1d2; }
+
+h1 {
+      font-size: 2em;
+      margin: 0;
+      line-height: 120%;
+}
+h2, h3 {
+      display: inline;
+}
+
+nav {
+      background-color: #9A9A9A;
+      font-size: 1.2em;
+      font-weight: 600;
+}
+nav a {
+      text-decoration: none;
+}
+nav a:link, nav a:visited { color: #344873; }
+nav a:hover { color: #A52A2A; }
+nav ul {
+      display: flex;
+      padding-left: 0;
+      list-style-type: none;
+      margin: 0;
+      flex-direction: column;
+}
+nav li {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      width: 100%;
+      border: 1px solid black;
+      min-height: 2.4em;
+}
+footer {
+      text-align: center;
+      font-size: .70em;
+      font-style: italic;
+      padding: 1em;
+      color: #474747;
+      font-weight: 600;
+}
+main h1 {
+      padding-top: 0.5em;
+      padding-left: 0.5em;
+}
+#indexhero-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+      margin-top: 1em;
+}
+#indexhero-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 1em 0;
+      border: 1px solid #7b5006;
+}
+.photo-credit {
+    font-style: italic;
+    margin-top: 0.5em;
+    text-align: left;
+}
+
+.photo-credit a {
+    color: #344873;
+    text-decoration: underline;
+}
+.location-box {
+      background-color: #fff1d2;
+      border: 2px solid #7b5006;
+      margin: 2em 0;
+      padding: 1.5em;
+}
+.loc-title {
+      margin: 0 0 0.5em 0;
+      font-size: 1.5em;
+      color: #c60000;
+      display: block;
+}
+.loc-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+}
+.loc-column {
+      flex: 1;
+}
+.loc-column h2 {
+      display: block;
+      margin: 0 0 0.5em 0;
+      color: #7b5006;
+}
+.loc-column p {
+      margin: 0;
+      line-height: 1.5;
+}
+.prod-box {
+      background-color: #f3e5c6;
+      border: 2px solid #7b5006;
+      margin: 2em 0;
+      padding: 1.5em;
+}
+
+.prod-title {
+      display: block;
+      margin: 0 0 0.5em 0;
+      font-size: 1.5em;
+      color: #c60000;
+}
+
+.prod-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+}
+
+.prod-image img {
+      width: 150px;
+      height: auto;
+      display: block;
+      border: 1px solid #7b5006;
+}
+
+.prod-details {
+      flex: 1;
+}
+
+.prod-details h2 {
+      display: block;
+      margin: 0 0 0.5em 0;
+      color: #7b5006;
+      font-size: 1.2em;
+}
+/* Medium Display */
+@media (min-width: 600px) {
+      h1 {
+            font-size: 2.2em;
+            letter-spacing: 0.1em;
+      }
+      
+      nav ul {
+            flex-direction: row;
+            padding: 0;
+            height: auto;
+      }
+
+      nav li {
+            width: auto;
+            flex: 1;
+            border-bottom: 1px solid black;
+      }
+      #indexhero-container {
+            flex-direction: row;
+            align-items: center;
+      }
+      #indexhero-image {
+            flex: 1;
+            max-width: 50%;
+      }
+      #indexhero-text {
+            flex: 1;
+            padding-left: 1em;
+      }
+      .location-box {
+            flex-direction: row;
+            align-items: flex-start;
+      }
+      .loc-content {
+            flex-direction: row;
+            align-items: flex-start;
+      }
+      .prod-content {
+            flex-direction: row;
+            align-items: flex-start;
+      }
+}
+/* Large Display */
+@media (min-width: 1024px) {
+      #wrapper {
+            margin: auto;
+            width: 80%;
+            background-color: #e4d2a9;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+      }
+}
