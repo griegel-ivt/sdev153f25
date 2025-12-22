@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HyperToast Morning Latte</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="bakery.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="logo.png">
+    </head>
+    <body>
+        <header>
+            <h1><a href="index.html"><span id="header1">Hyper</span><span id="header2">Toast </span><span id="header3">Morning </span><span id="header4">Latte</span></a></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="drinks.html">Drinks</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="ordering.html">Ordering</a></li>
+                <li><a href="locations.html">Locations & Hours</a></li>
+                <li><a href="birthdays.html">Birthday Parties</a></li>
+            </ul>
+        </nav>
+        <div id="wrapper">
+            <main>
+                <h1>Place a Birthday Party</h1>
+
+                <div class="order-container">
+                    <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+                        <fieldset class="prod-box">
+                            <legend class="prod-title">Birthday Information</legend>
+                            
+                            <label for="guestName">Birthday Guest Name:</label>
+                            <input type="text" id="guestName" name="guestName" required placeholder="Enter guest name">
+
+                            <label for="guestAge">Age (turning):</label>
+                            <input type="number" id="guestAge" name="guestAge" required placeholder="8, 15, 28, 79, ...">
+
+                            <label for="partyParticipants">Party Participants:</label>
+                            <input type="number" id="partyParticipants" name="partyParticipants" required placeholder="Enter participant count">
+                        </fieldset>
+
+                        <fieldset class="prod-box">
+                            <legend class="prod-title">Contact Information:</legend>
+                            
+                            <label for="contactName">Name:</label>
+                            <input type="text" id="conactName" name="contactName" required placeholder="Enter your name">
+
+                            <label for="contactPhone">Phone:</label>
+                            <input type="tel" id="contactPhone" name="contactPhone" required placeholder="123-456-7890">
+                        </fieldset>
+
+                        <fieldset class="prod-box">
+                            <legend class="prod-title">Location</legend>
+                            
+                            <label for="locationSelect">Choose a Location:</label>
+                            <select id="locationSelect" name="locationSelect">
+                                <option value="Mishawaka">Mishawaka</option>
+                                <option value="South Bend">South Bend (Coming Soon!)</option>
+                                <option value="Granger">Granger (Coming Soon!)</option>
+                                <option value="Niles">Niles (Coming Soon!)</option>
+                            </select>
+                        </fieldset>
+
+                        <fieldset class="prod-box">
+                            <legend class="prod-title">Special Instructions</legend>
+                            <textarea id="comments" name="comments" rows="4" placeholder="Singing staff? High fives? Let us know here..."></textarea>
+                            
+                            <input type="submit" value="Place Party" class="submit-button">
+                        </fieldset>
+                    </form>
+                </div>
+            </main>
+            <footer>
+                Copyright &copy; 2025 HyperToast Morning Latte<br>
+            </footer>
+        </div>
+    </body>
+</html>

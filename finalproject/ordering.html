@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HyperToast Morning Latte</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="bakery.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="logo.png">
+    </head>
+    <body>
+        <header>
+            <h1><a href="index.html"><span id="header1">Hyper</span><span id="header2">Toast </span><span id="header3">Morning </span><span id="header4">Latte</span></a></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="drinks.html">Drinks</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="ordering.html">Ordering</a></li>
+                <li><a href="locations.html">Locations & Hours</a></li>
+                <li><a href="birthdays.html">Birthday Parties</a></li>
+            </ul>
+        </nav>
+        <div id="wrapper">
+            <main>
+                <h1>Place Your Order</h1>
+
+                <div class="order-container">
+                    <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+                        <fieldset class="prod-box">
+                            <legend class="prod-title">Customer Information</legend>
+                            
+                            <label for="custName">Name:</label>
+                            <input type="text" id="custName" name="custName" required placeholder="Enter your name">
+
+                            <label for="custPhone">Phone Number:</label>
+                            <input type="tel" id="custPhone" name="custPhone" required placeholder="123-456-7890">
+                        </fieldset>
+
+                        <fieldset class="prod-box">
+                            <legend class="prod-title">Your Selection</legend>
+                            
+                            <label for="drinkSelect">Choose a Drink:</label>
+                            <select id="drinkSelect" name="drinkSelect">
+                                <option value="None">None</option>
+                                <option value="Hyper-Caffeinated Latte">Hyper-Caffeinated Latte</option>
+                                <option value="Rising Sun Matcha">Rising Sun Matcha</option>
+                                <option value="Burnt Sugar Cold Brew">Burnt Sugar Cold Brew</option>
+                            </select>
+
+                            <label for="foodSelect">Choose a Toast/Bake:</label>
+                            <select id="foodSelect" name="foodSelect">
+                                <option value="None">None</option>
+                                <option value="The &quot;OG&quot; HyperToast">The "OG" HyperToast</option>
+                                <option value="Avocado Sunrise Toast">Avocado Sunrise Toast</option>
+                                <option value="Mishawaka Morning Roll">Mishawaka Morning Roll</option>
+                            </select>
+                        </fieldset>
+
+                        <fieldset class="prod-box">
+                            <legend class="prod-title">Special Instructions</legend>
+                            <textarea id="comments" name="comments" rows="4" placeholder="Extra foam? No onions? Let us know here..."></textarea>
+                            
+                            <input type="submit" value="Place Order" class="submit-button">
+                        </fieldset>
+                    </form>
+                </div>
+            </main>
+            <footer>
+                Copyright &copy; 2025 HyperToast Morning Latte<br>
+            </footer>
+        </div>
+    </body>
+</html>
